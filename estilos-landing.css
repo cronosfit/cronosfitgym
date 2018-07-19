@@ -1,0 +1,69 @@
+/* Esto fue lo que les comenté de hacer un "reset" de los estilos,
+puesto que los diferentes navegadores tienen algunos por default.
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  /*'vh' es otra unidad de medida del ancho de pantalla.
+  Revisar el siguiente artículo para entender 
+  la diferencia entre poner 100vh y 100%
+  https://bitsofco.de/viewport-vs-percentage-units/
+  */
+  height: 100vh; /* Configura el ancho de la imagen tomando el 100% de la página visible */
+  background-image: url("Rogue-Bar.jpg"); /* Hace llamado a la grafica */
+  background-size: cover; /* Me cubre toda la pantalla, hay otraas opciones */
+  background-position: center; /* Mantiene la imagén centrada en la pantalla */
+  /* margin-bottom: 50px; */
+  text-align: center;
+  /* Revisar la guía completa que está en CSS Tricks:*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fila1{
+  display:flex;
+  text-align: center;
+  align-items: center;
+}
+
+.columna{
+  flex:50%;
+}
+
+
+h1{
+  font-family: 'Fredoka One', cursive;
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: gray;
+  margin: 0;
+} 
+
+h2{
+  font-family: 'Fredoka One', cursive;
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: gray;
+  margin: 0;
+}
+
+h3{
+  font-family: 'Fredoka One', cursive;
+}
+
+p {
+  font-family: 'Fredoka One', cursive;
+  width: 600px;
+  margin: 0 auto 20px;
+  text-align: justify;
+}
